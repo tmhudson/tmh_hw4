@@ -1,5 +1,10 @@
 class PostsController < ApplicationController
 
+  # do I need the below?
+  def index
+    @posts = Post.all
+  end
+  
   def new
     @post = Post.new
     @post.place_id = params["place_id"]
