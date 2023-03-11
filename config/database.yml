@@ -23,6 +23,6 @@ test:
 production:
   <<: *default
   adapter: postgresql
-  database: traveljournal_final_production
-  username: traveljournal_final
-  password: <%= ENV["TRAVELJOURNAL_FINAL_DATABASE_PASSWORD"] %>
+  database: tmh_tacogram_final_production
+  username: tmh_tacogram_final
+  password: <%= ENV["TMH_TACOGRAM_FINAL_DATABASE_PASSWORD"] %>
