@@ -3,6 +3,7 @@ class PostsController < ApplicationController
   # do I need the below?
   def index
     @posts = Post.all
+    @current_user = User.find_by({ "id" => session["user_id"] })
   end
   
   def new
